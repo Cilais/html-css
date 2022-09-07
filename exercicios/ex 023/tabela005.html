@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+
+        }
+
+        col.nome {
+            background-color: chartreuse;
+        }
+
+        col.amarelo {
+            background-color:yellow;
+        }
+        col.vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupamento de colunas (colgroup)</h1>
+    <table>
+        <colgroup>
+        <col class="amarelo">
+        <col class="vermelho" span="2">
+        <col class="amarelo">
+      
+       
+    </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col"h>Sexo</th>
+            <th scope="col"h>Idade</th>
+            <th scope="col"h>Profissão</th>
+        </tr>
+
+        <tr>
+            <tr>
+                <td>Cínthia</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Desenvolvedora front-end</td>
+    
+            </tr>
+            <tr>
+                <td>Gabriel</td>
+                <td>M</td>
+                <td>29</td>
+                <td>Cientista de dados</td>
+    
+                <tr>
+                    <td>Alaíde</td>
+                    <td>F</td>
+                    <td>68</td>
+                    <td>Autônoma</td>
+        
+                </tr>
+    
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>52</td>
+                    <td>Auxiliar de cozinha</td>
+        
+                </tr>
+                   
+                <tr>
+                    <td>Alexandre</td>
+                    <td>m</td>
+                    <td>46</td>
+                    <td>Gerente</td>
+        
+                </tr>
+    
+                <tr>
+                    <td>Valdir</td>
+                    <td>m</td>
+                    <td>58</td>
+                    <td>Ajudante Geral</td>
+        
+            </tr>
+    </table>
+</body>
+</html>
